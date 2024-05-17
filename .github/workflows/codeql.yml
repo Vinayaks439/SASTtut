@@ -85,7 +85,7 @@ jobs:
           'your code, for example:'
         gcc -g test.c
         gcc -g bufferoverflow/bufferoverflow.c 
-        gcc -g integeroverflow/integeroverflow.c
+        gcc -g integeroverflow/overflow.c
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
