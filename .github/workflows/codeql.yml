@@ -85,8 +85,9 @@ jobs:
           'your code, for example:'
         gcc -g test.c
         cd bufferoverflow
+        echo $PWD
         gcc -g bufferoverflow.c 
-        cd ../integeroverflow
+        cd ../integeroverflow/
         gcc -g overflow.c
 
     - name: Perform CodeQL Analysis
