@@ -24,6 +24,5 @@ int main(void)
        /* Now Give root or admin rights to user*/
         printf ("\n Root privileges given to the user \n");
     }
-
     return 0;
 }
