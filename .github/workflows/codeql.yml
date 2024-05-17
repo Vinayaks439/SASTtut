@@ -84,8 +84,10 @@ jobs:
           'languages you are analyzing, replace this with the commands to build' \
           'your code, for example:'
         gcc -g test.c
-        gcc -g bufferoverflow/bufferoverflow.c 
-        gcc -g integeroverflow/overflow.c
+        cd bufferoverflow
+        gcc -g bufferoverflow.c 
+        cd ../integeroverflow
+        gcc -g overflow.c
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
